@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\Backend\\CustomerApi\\CustomerApi.csproj": {}
+    "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\backend\\CustomerApi\\CustomerApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\Backend\\CustomerApi\\CustomerApi.csproj": {
+    "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\backend\\CustomerApi\\CustomerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\Backend\\CustomerApi\\CustomerApi.csproj",
+        "projectUniqueName": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\backend\\CustomerApi\\CustomerApi.csproj",
         "projectName": "CustomerApi",
-        "projectPath": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\Backend\\CustomerApi\\CustomerApi.csproj",
+        "projectPath": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\backend\\CustomerApi\\CustomerApi.csproj",
         "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\Backend\\CustomerApi\\obj\\",
+        "outputPath": "C:\\Users\\ahmed\\Documents\\Off_work\\InterChal\\backend\\CustomerApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.10, )"
@@ -77,6 +85,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [

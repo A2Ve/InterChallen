@@ -3,6 +3,8 @@ import { Customer } from '../../models/customer';
 import { CustomerService } from '../../services/customer.service';
 import { CommonModule } from '@angular/common';
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+
 
 @Component({
   selector: 'app-customers-list',
@@ -10,11 +12,12 @@ import {FormControl, FormGroup, FormsModule, ReactiveFormsModule} from '@angular
   templateUrl: './customers-list.html',
   styleUrl: './customers-list.css',
 })
+
 export class CustomersList{
   customers: Customer[] = [];
   updatingId: number | null = null; 
 
-  constructor(private customerService: CustomerService) {}
+  constructor(private customerService: CustomerService, public authService: AuthService) {}
 
   ngOnInit(): void {
     this.customerService.getCustomers().subscribe((data: Customer[]) => {
@@ -56,4 +59,7 @@ export class CustomersList{
     });
   }
 
+  logout(): void {
+  this.authService.logout();
+}
 }
